@@ -697,8 +697,8 @@ def Run():
             message = u"地址      ："+address+"\n"+          \
                       u"物品      ："+curr_title+"\n"+       \
                       u"描述      ："+curr_detail+"\n"+      \
-                      u"现价      ："+str(curr_price)+"\n"+  \
-                      u"移动端价格："+str(curr_mobi)+"\n"+   \
+                      u"移动端价格："+str(curr_price)+"\n"+  \
+                      u"移动端优惠："+str(curr_mobi)+"\n"+   \
                       u"有货否    ："+curr_stock+"\n"+       \
                       u"活动      ："+curr_promo+"\n"+       \
                       u"优惠券    ："+curr_coupon+"\n"       \
