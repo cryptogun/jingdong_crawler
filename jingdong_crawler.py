@@ -38,7 +38,12 @@ class Settings:
 
     def _read_ini(self):
         self.config=configparser.ConfigParser(delimiters=('='), allow_no_value=True)
-        self.config.read_file(codecs.open('jingdong_crawler_setting.ini', "r", "utf-8"))
+        with codecs.open('jingdong_crawler_setting.ini', "r", "utf-8") as f:
+            first = f.read(1)
+            if first != "\ufeff":
+                # not a BOM, rewind
+                f.seek(0)
+            self.config.read_file(f)
 
     def get_sleep_interval(self):
         """Get interval between every two waves of querying."""
