@@ -572,7 +572,7 @@ def Run():
     count=0
     #JD goods id.
     ID=re.findall(r"/([\d]+).ht", MONITORING_ADDR)
-    ID=list(tuple(ID))
+    ID=list(set(ID))
     while(True):
         #Endless querying with sleep interval, until user quit the program.
         count+=1
