@@ -262,7 +262,7 @@ RECEIVER_EMAIL_ACCOUNTS=settings.get_receiver_email_account()
 class Product:
     def __init__(self,id_i):
         self.id_i=id_i
-        self.url="http://item.m.jd.com/product/"+self.id_i+".html?provinceId=%d&cityId=%d&countyId=%d"%(PROVINCEID, CITYID, COUNTYID)
+        self.url="http://item.m.jd.com/product/"+self.id_i+".html?provinceId=%d&cityId=%d&countryId=%d"%(PROVINCEID, CITYID, COUNTYID)
         self.page=None
         self.html=None
         self._compile_regex_object()
@@ -588,7 +588,7 @@ def Run():
         #For each link setted in file.
         for id_i in ID:
             time.sleep(random.randint(100,200)/1000)
-            url_i = "http://item.m.jd.com/product/"+id_i+".html?provinceId=%d&cityId=%d&countyId=%d"%(PROVINCEID, CITYID, COUNTYID)
+            url_i = "http://item.m.jd.com/product/"+id_i+".html?provinceId=%d&cityId=%d&countryId=%d"%(PROVINCEID, CITYID, COUNTYID)
             print("++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
             product=Product(id_i)
