@@ -364,7 +364,7 @@ class Product:
             #Escape the " for eval use.
             content = json.loads(response.read().decode("utf-8"))["coupon"].replace("true", "\"true\"").replace("false", "\"false\"")
         except KeyError:
-        	content = ""
+        	content = "{}"
         response.close()
         content = ast.literal_eval(content)
         coupon_text = ""
