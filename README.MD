@@ -1,9 +1,9 @@
-#京东任意n项商品监控爬虫
+# 京东任意n项商品监控爬虫
 Monitoring price/price/coupon/promotion/stock states of goods. Music/email/SMS reminder provided.   
 本爬虫可以监控京东商品的标题、描述、价格、移动端优惠、存货、活动、优惠券的变化。并提供音乐提醒、邮件提醒、短信提醒。   
 具体请到`jingdong_crawler_setting.ini`里进行设置。   
 
-##效果
+## 效果
 ```text
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 无变更。
